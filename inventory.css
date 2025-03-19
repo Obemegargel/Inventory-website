@@ -1,0 +1,99 @@
+:root {
+    --PrimaryColor:#EEEEF4;
+    --SecondaryColor:#04234D;
+    --ThirdColor:#AD061E;
+    --TextBoxColor:white;
+
+    --DarkText:rgb(100, 100, 100);
+    --lightText:white;
+
+    --font: sans-serif;
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--PrimaryColor);
+    margin: 0%;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--SecondaryColor);
+    color: var(--lightText);
+    font-family: var(--font);
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1em;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--PrimaryColor);
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    background-color: var(--SecondaryColor);
+    color: var(--lightText);
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.tags{
+    display: flex;
+    background-color: var(--SecondaryColor);
+    color: var(--lightText);
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    width: 10em;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    width: 15em;
+}
+
+.search-plus-button{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    background-color: var(--ThirdColor);
+    color: var(--lightText)
+}
+
+a:link{
+    color: var(--lightText)
+}
+a:visited{
+    color: var(--lightText)
+}
+
+#inventory-container{
+    height: 100%;
+    overflow: auto; /* This prevents items from going past the footer.*/
+}
+
+.product_bar{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--DarkText);
+    padding: .5em;
+    gap: 2em;
+    margin: .75em;
+
+}

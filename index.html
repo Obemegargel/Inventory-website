@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <Header>
+        <a href="index.html">HOME</a>
+        <h1>Inventory Tracking</h1>
+
+        <div class="tags" id="search">
+            <form class="search-plus-button">
+                <input id="searchBox" type="text" placeholder="Search Products..."> <!--class="searchbar"-->
+                <button class="button">Reset</button>
+            </form>
+        </div>
+    </Header>
+
+    <main>
+
+        <!-- NOTE: below might replace the above divs if I can get all the 800's... etc down. -->
+               <!-- It might also replace the need for multiple pages I might get to put everything here on the main page. -->
+        <div id="button-container">
+
+            <button class="sort" id="all-btn" data-location="Show All">Show All</button>
+
+            <div class="sorter-columns">
+                <div class="sort-column">
+                    <button class="sort" id="400-btn" data-location="400's/PVC">400's/PVC</button>
+                    <button class="sort" id="800-btn" data-location="800's/Grey">800's/Grey</button>
+                    <button class="sort" id="brass-btn" data-location="Brass">Brass</button>
+                    <button class="sort" id="paint-btn" data-location="Paint">Paint</button>
+                </div>
+
+                <div class="sort-column">
+                    <button class="sort" id="dripstm-btn" data-location="Drip System">Drip System</button>
+                    <button class="sort" id="9001200-btn" data-location="900's - 1200's">900's - 1200's</button>
+                    <button class="sort" id="1800-btn" data-location="1800's">1800's</button>
+                    <button class="sort" id="sprnklrdvc-btn" data-location="Sprinkler Devices">Sprinkler Devices</button>
+                </div>    
+            </div>
+            
+            
+        </div>
+        
+
+        <div id="inventory-container"></div>
+
+        <script src="script.js"></script> <!--link to script.js file-->
+
+    </main>
+
+    <footer>
+        <p>Go to the Top</p>
+    </footer>
+    
+</body>
+</html>
